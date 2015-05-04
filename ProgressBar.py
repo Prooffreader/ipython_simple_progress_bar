@@ -1,3 +1,5 @@
+# code for the progress bar
+
 import time
 
 class ProgressBar: 
@@ -23,8 +25,9 @@ class ProgressBar:
                 self.overflow = True
 
     def finish(self):
-        if 99 <= self.curr_pct <= 100: # rounding sometimes makes the maximum count 99.
-            print("100", end=' ')
+        if 99 <= self.curr_pct <= 100: 
+            if self.curr_pct == 99: # rounding sometimes makes the maximum count 99.
+                print("100", end=' ')
             print('\nElapsed time: {:0.1f} seconds.\n'.format(time.time() - self.start))
         elif self.overflow == True:
             print('Elapsed time after end of loop: {:0.1f} seconds.\n'.format(time.time() - self.start))
