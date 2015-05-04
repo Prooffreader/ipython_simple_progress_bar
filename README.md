@@ -1,6 +1,8 @@
 # ipython_simple_progress_bar
 A quick and dirty progress 'bar' (really, a count to 100) that will display below an IPython/Jupyter cell while it is running
 
+[Link to NBViewer preview of full example](http://nbviewer.ipython.org/github/Prooffreader/ipython_simple_progress_bar/blob/master/example.ipynb)
+
 Example use:
 
     loop_length = 1000000
